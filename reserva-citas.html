@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reserva-citas.css" />
+    <script src="js/reserva-citas.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="menu">
+
+        <div id="container">
+            <a class="principal" href="index.html">REGRESAR</a>
+
+        </div>
+
+    </nav>
+    <div class="modal-header">
+        <h4 class="modal-title">CITAS</h4>
+        <div class="container">
+        <img src="images/rostro completoPNG.PNG" class="rostro">
+         </div>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+    <!-- Modal body -->
+    <div >
+        <h1>Reserva de Citas - Manicure </h1>
+  <form id="citaForm">
+    <label for="nombreCliente">Nombre del Cliente:</label>
+    <input type="text" id="nombreCliente" required><br>
+    
+    <label for="fechaCita">Fecha de la Cita:</label>
+    <input type="date" id="fechaCita" required><br>
+    
+    <input type="submit" value="Reservar Cita">
+  </form>
+  <div id="mensaje"></div>
+
+
+
+  <table id="tablaCitas">
+    <tr>
+      <th>Nombre Cliente</th>
+      <th>Fecha Cita</th>
+    </tr>
+  </table>
+
+
+
+  <script src="script.js"></script>
+
+    </div>
+
+    <footer id="footer">
+
+        <credit>&copy; Derechos Reservados ISW-DAW UTN II-2023</credit>
+        <div id="date">2023</div>
+        <script>
+            document.getElementById("date").innerHTML = new Date().toDateString()
+        </script>
+
+    </footer>
+
+</body>
+
+</html>

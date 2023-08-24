@@ -1,0 +1,166 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Proyecto Final</title>
+  <meta name="description" content="Proyecto Final de Diseño de Aplicaciones Web" />
+  <meta name="keywords" content="HTML5, CSS3, JAVASCRIPT, JSON, REST" />
+  <meta name="author" content="Harold Ballestero Garcia" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+  <!---Responsive-->
+
+  <link rel="stylesheet" type="text/css" href="css/default.css" />
+
+  <!--Imagenes CSS-->
+  <link rel="stylesheet" type="text/css" href="css/imagenes.css" />
+</head>
+
+<body onload="mostrarTodo()">
+  <div id="outer">
+    <header id="header">
+      <div id="logo">
+        <img class="tamaño" src="images/eslogan.jpg" height="150" width="150" />
+        <h1 class="tamaño ultimo"><span>Maquillaje </span>Cosmeticos</h1>
+      </div>
+      
+    </header>
+
+    <nav id="menu">
+      <div id="container">
+        <ul>
+          <li><a class="principal" href="index.html">Home</a></li>
+          <li><a class="principal" href="ubicacion.html">¿Cómo llegar?</a></li>
+          <li><a class="principal" href="reserva-citas.html">Reserva de Citas Manicure</a></li>
+          <li><a class="principal" href="galeria.html">Galería de Imagenes</a></li>
+          <li>
+            <a class="principal" href="index.html" onclick="mostrarSubMenu(event)">Trabajos a ofrecer</a>
+            <ul id="submenu">
+              <li><a class="principal dentro" href="maquillaje.html">Maquillaje</a></li>
+              <br>
+              <li><a class="principal dentro" href="uñas.html">Uñas</a></li>
+            </ul>
+          </li>
+          <li><a class="principal" href="acercade.html">Acerca de..</a></li>
+          <li><a class="principal last" href="contacto.html">Contáctenos</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+
+      <div id="encapsulador_uñas">
+
+        <div id="contenido_uñas">
+
+          <h1>Elige cómo las quieres</h1>
+          <br>
+          <p>Tenemos esmaltado semipermanente, gel x, acrílicas y técnicas. Si tienes alguna idea en mente solo me la
+            haces saber.</p>
+
+        </div>
+
+        <div id="seleccion_uñas">
+
+          <label for="principal">Tipo de esmaltado:</label>
+          <select name="tipos" id="seleccion_tipo" onchange="mostrarTodo()">
+            <option value="normal" selected="selected">Normal</option>
+            <option value="semipermanente">Semipermanente</option>
+            <option value="gel">Gel x</option>
+            <option value="acrilica">Acrílicas</option>
+          </select>
+
+        </div>
+
+        <div id="infUñas">
+          
+        </div>
+
+      </div>
+
+      <div id="tabla">
+
+        <table>
+          <thead id="cabeza">
+            <tr>
+              <th class="secciones nombre">Nombre</th>
+              <th class="secciones descripcion">Descripción</th>
+              <th class="secciones foto">Ejemplo</th>
+            </tr>
+          </thead>
+          <tbody id="cuerpo">
+            <tr class="concolor">
+              <td class="secciones nombre">SQUARE</td>
+              <td class="secciones descripcion">
+                Generalmente es utilizado cuando se quiere una longitud de uñas medianas.
+              </td>
+              <td class="secciones foto">
+                <div>
+                  <img id="myImg" src="images/square.jpg" alt="uñas square" />
+                </div>
+              </td>
+            </tr>
+            <tr class="concolor">
+              <td class="secciones nombre">STILETTO</td>
+              <td class="secciones descripcion">
+                Es muy utilizado hoy en día, su estilo alargado lo hace lucir atractivo a los ojos.
+              </td>
+              <td class="secciones foto">
+                <div>
+                  <img class="myImg" src="images/stiletto.jpg" alt="uñas stiletto" />
+                </div>
+              </td>
+            </tr>
+            <tr class="concolor">
+              <td class="secciones nombre">ALMOND</td>
+              <td class="secciones descripcion">
+                Suele ser utilizado por chicas que se cuidan mucho las uñas, debido a que esmuy fácil que se lleguen a
+                romper, sus lados no son muy fuertes. Se pueden lucir de manera muy elegante.
+              </td>
+              <td class="secciones foto">
+                <div>
+                  <img class="myImg" src="images/almond.jpg" alt="uñas almond" />
+                </div>
+              </td>
+            </tr>
+            <tr class="concolor">
+              <td class="secciones nombre">ROUND</td>
+              <td class="secciones descripcion">
+                Si te gusta lucir unas uñas cortas, probablemente, esta es la mejor opción, no suelen quebrarse debido a
+                lo cortas que son. Suelen pasar desapercibidas pero al ponerles atención deslubran.
+              </td>
+              <td class="secciones foto">
+                <div>
+                  <img class="myImg" src="images/round.jpg" alt="uñas round" />
+                </div>
+              </td>
+            </tr>
+          </tbody>
+
+          <tfoot id="pie">
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </tfoot>
+        </table>
+
+      </div>
+
+    </main>
+  </div>
+
+  <footer id="footer">
+    <credit>&copy; Derechos Reservados ISW-DAW UTN I-2022</credit>
+    <div id="date">2022</div>
+    <script>
+      document.getElementById("date").innerHTML = new Date().toDateString();
+    </script>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/jQuery.js"></script>
+  <script src="js/home.js"></script>
+</body>
+
+</html>

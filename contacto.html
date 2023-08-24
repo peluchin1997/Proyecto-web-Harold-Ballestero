@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Proyecto Final</title>
+    <meta
+      name="description"
+      content="Proyecto Final de Diseño de Aplicaciones Web"
+    />
+    <meta name="keywords" content="HTML5, CSS3, JAVASCRIPT, JSON, REST" />
+    <meta name="author" content="Anthony Badilla, Oscar Ramírez" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!---Responsive-->
+
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+
+    <!--Form-->
+
+    <link rel="stylesheet" type="text/css" href="css/formulario.css" />
+  </head>
+
+  <body>
+    <div id="outer">
+      <header id="header">
+        <div id="logo">
+          <img
+            class="tamaño"
+            src="images/eslogan.jpg"
+            height="150"
+            width="150"
+          />
+          <h1 class="tamaño ultimo"><span>Maquillaje </span>Cosmeticos</h1>
+        </div>
+       
+      </header>
+
+      <nav id="menu">
+        <div id="container">
+          <ul>
+            <li><a class="principal" href="index.html">Home</a></li>
+            <li><a class="principal" href="ubicacion.html">¿Cómo llegar?</a></li>
+            <li><a class="principal" href="calculadora.html">Reserva de Citas Manicure</a></li>
+            <li><a class="principal" href="galeria.html">Galería de Imagenes</a></li>
+            <li>
+                <a class="principal" href="index.html" onclick="mostrarSubMenu(event)">Trabajos a ofrecer</a>
+                <ul id="submenu">
+                    <li><a class="principal dentro" href="maquillaje.html">Maquillaje</a></li>
+                    <br>
+                    <li><a class="principal dentro" href="uñas.html">Uñas</a></li>
+                </ul>
+            </li>
+            <li><a class="principal" href="acercade.html">Acerca de..</a></li>
+            <li><a class="principal last" href="contacto.html">Contáctenos</a></li>
+          </ul>
+      </div>
+      </nav>
+
+      <main>
+        <div id="formulario">
+          <form>
+            <div id="contenido_form">
+              <ul>
+                <li>
+                  <label for="name">Nombre completo:</label>
+                  <input type="text" id="name" name="user_name" placeholder="Eduardo Díaz" />
+                </li>
+                <li>
+                  <label for="mail">Correo electrónico:</label>
+                  <input type="email" id="mail" name="user_mail" placeholder="eduar2043@gmail.com" />
+                </li>
+                <li>
+                  <label for="birth">Fecha de nacimiento:</label>
+                  <input type="date" id="date" name="user_date" />
+                </li>
+                <li>
+                  <label for="sexo">Seleccione su género:</label>
+                  <select name="user_gender" id="genero">
+                    <option value="Mujer" selected="selected">Mujer</option>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Indefinido">Prefiero no seleccionar</option>
+                  </select>
+                </li>
+                <li>
+                  <label for="salario">Indique su rango de salario:</label>
+                  <input type="number" name="rango" id="rango" min="0" max="10000000">
+                </li>
+                <li>
+                  <label for="degree">Grado académico:</label>
+  
+                  <input type="checkbox" name="Bachillerato_Colegial" class="checkbox" />
+                  <label class="grados" for="bach_cole">Bachillerato      (Colegio)</label>
+  
+                  <input type="checkbox" name="Técnico_Medio" class="checkbox" />
+                  <label class="grados" for="tecnico">Técnico Medio</label>
+  
+                  <input type="checkbox" name="Diplomado" class="checkbox" />
+                  <label class="grados" for="diplomado">Diplomado</label>
+  
+                  <input type="checkbox" name="Bachillerato" class="checkbox" />
+                  <label class="grados" for="bach_uni">Bachillerato</label>
+  
+                  <input type="checkbox" name="Licenciatura" class="checkbox" />
+                  <label class="grados" for="licenciatura">Licenciatura</label>
+  
+                  <input type="checkbox" name="Doctorado" class="checkbox" />
+                  <label class="grados" for="doctorado">Doctorado</label>
+                </li>
+                <li id="boton_enviar">
+                  <input type="submit" name="send_mail" id="enviarCorreo" value="Enviar" />
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+    <footer id="footer">
+
+      <credit>&copy; Derechos Reservados ISW-DAW UTN II-2023</credit>
+      <div id="date">2023</div>
+      <script>
+        document.getElementById("date").innerHTML = new Date().toDateString();
+      </script>
+
+  </footer>
+  <script src="js/home.js"></script>
+  <script src="js/form.js"></script>
+  </body>
+</html>

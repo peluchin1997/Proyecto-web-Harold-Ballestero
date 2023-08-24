@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ubicacion.css">
+    <title>Consumo de Google  Map API</title>
+   
+
+</head>
+<body>
+   
+    <nav id="menu">
+
+        <div id="container">
+            <a class="principal" href="index.html">REGRESAR</a>
+            
+        </div>
+
+    </nav>
+
+
+
+<h1>Google Maps API</h1>
+<h1>País: Costa Rica</h1>
+<h1>Provincia: Alajuela</h1>
+<h1>Cantón: Grecia</h1>
+<h1>Distrito: Grecia Centro</h1>
+<h1>Localidad: Urbanización Murillo</h1>
+
+ <button id="obtenerDireccion">Haz clic, para poder trazar la ruta!!!!</button>
+ 
+ <div id="map" ></div>
+
+<!-- Codigo de java script-->
+<script src="js/ubicacion.js"></script>
+<!--en enlace  url para consumir el api privada-->
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd4s-lsD1-FPS8g2PVNvjD8jiC700X7Ow&libraries=geometry&callback=initMap"></script>
+    
+<footer id="footer">
+    <credit>&copy; Derechos Reservados ISW-DAW UTN II-2023</credit>
+    <div id="date">2023</div>
+    <script>
+      document.getElementById("date").innerHTML = new Date().toDateString();
+    </script>
+  </footer>
+
+</body>
+</html>

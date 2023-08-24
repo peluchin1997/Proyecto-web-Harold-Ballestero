@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Proyecto Final</title>
+    <meta name="description" content="Proyecto Final de Diseño de Aplicaciones Web" />
+    <meta name="keywords" content="HTML5, CSS3, JAVASCRIPT, JSON, REST" />
+    <meta name="author" content="Anthony Badilla, Oscar Ramírez" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   
+    <!---Responsive-->
+   
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+
+</head>
+
+<body>
+
+    <div id="outer">
+
+        <header id="header">
+            <div id="logo">
+                <img class="tamaño" src="images/eslogan.jpg" height="150" width="150">
+                <h1 class="tamaño ultimo"><span>Maquillaje </span>Cosmeticos</h1>
+            </div>
+           
+
+        </header>
+
+        <nav id="menu">
+
+            <div id="container">
+                <ul>
+                    <li><a class="principal" href="index.html">Home</a></li>
+                    <li><a class="principal" href="ubicacion.html">¿Cómo llegar?</a></li>
+                    <li><a class="principal" href="reserva-citas.html">Reserva de Citas Manicure</a></li>
+                    <li><a class="principal" href="galeria.html">Galería de Imagenes</a></li>
+                    <li>
+                        <a class="principal" href="index.html" onclick="mostrarSubMenu(event)">Trabajos a ofrecer</a>
+                        <ul id="submenu">
+                            <li><a class="principal dentro" href="maquillaje.html">Maquillaje</a></li>
+                            <br>
+                            <li><a class="principal dentro" href="uñas.html">Uñas</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="principal" href="acercade.html">Acerca de..</a></li>
+                    <li><a class="principal last" href="contacto.html">Contáctenos</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <main>
+
+            <div id="contenido_maquillaje">
+
+                <h1>¡Variedad de Maquillaje!</h1>
+
+                <p>Maquillaje para toda ocasión desde social dramático o sencillo hasta maquillaje característico o fantasía.</p>
+                <br>
+                <p>Si deseas ver ejemplos te recomendamos ver la <a href="galeria.html">galería de imagenes</a>.</p>
+
+            </div>
+
+            <div id="imagen_maquillaje">
+                <img src="images/seccion_maquillaje.jpg" alt="imagen maquillaje" width="300px" height="300px">
+            </div>
+
+        </main>
+
+    </div>
+
+    <footer id="footer">
+
+        <credit>&copy; Derechos Reservados ISW-DAW UTN II-2023</credit>
+        <div id="date">2023</div>
+        <script>
+            document.getElementById("date").innerHTML = new Date().toDateString()
+        </script>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

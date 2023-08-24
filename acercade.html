@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Proyecto Final</title>
+    <meta name="description" content="Proyecto Final de Diseño de Aplicaciones Web" />
+    <meta name="keywords" content="HTML5, CSS3, JAVASCRIPT, JSON, REST" />
+    <meta name="author" content="Anthony Badilla, Oscar Ramírez" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   
+    <!---Responsive-->
+   
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+
+</head>
+
+<body>
+
+    <div id="outer">
+
+        <header id="header">
+            <div id="logo">
+                <img class="tamaño" src="images/eslogan.jpg" height="150" width="150">
+                <h1 class="tamaño ultimo"><span>Maquillaje </span>Cosmeticos</h1>
+            </div>
+            
+
+        </header>
+
+        <nav id="menu">
+
+            <div id="container">
+                <ul>
+                    <li><a class="principal" href="index.html">Home</a></li>
+                    <li><a class="principal" href="ubicacion.html">¿Cómo llegar?</a></li>
+                    <li><a class="principal" href="reserva-citas.html">Reserva de Citas Manicure</a></li>
+                    <li><a class="principal" href="galeria.html">Galería de Imagenes</a></li>
+                    <li>
+                        <a class="principal" href="index.html" onclick="mostrarSubMenu(event)">Trabajos a ofrecer</a>
+                        <ul id="submenu">
+                            <li><a class="principal dentro" href="maquillaje.html">Maquillaje</a></li>
+                            <br>
+                            <li><a class="principal dentro" href="uñas.html">Uñas</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="principal" href="acercade.html">Acerca de..</a></li>
+                    <li><a class="principal last" href="contacto.html">Contáctenos</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <main>
+
+            <div class="responsivo_info">
+
+                <div>
+
+                    <div class="cargo">
+                        <h2>Desarrollador</h2>
+                    </div>
+
+                    <div id="perfil_harold" class="perfiles harold">
+
+                        <div id="info_harold" style="display: none;">
+                            <h2>Harold Ballestero Garcia</h2>
+                            <p>ballesteroharold17@gmail.com</p>
+                            <p>2-0764-0619</p>
+                            <p>Programador</p>
+
+                            <img id="foto_dentro_harold" src="images/desarrollador.jpg" alt="desarrollador" width="150px" height="150px">
+                        </div>
+
+                        <img id="imgoscar" class="fotos_fuera" src="images/Montaña.jpg" alt="foto Harold">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="responsivo_info">
+
+                
+
+            </div>
+
+           <div class="responsivo_info">
+
+  <div>
+
+      <div class="cargo medio">
+          <h2>Autora</h2>
+      </div>
+
+      <div id="perfil_yuda" class="perfiles">
+
+          <div id="info_yuda" style="display: none;">
+              <h2>Yudith Castro Sanchez</h2>
+              <p>yudaangely@gmail.com</p>
+              <p>1-1827-0641</p>
+              <p>Maquilladora Profesional</p>
+
+              <img id="foto_dentro_yuda" src="images/maquilla.jfif" alt="maquillaje" width="150px" height="150px">
+          </div>
+
+          <img id="imgyuda" class="fotos_fuera" src="images/foto_yuda.jpeg" alt="foto Yudith">
+
+      </div>
+  </div>
+
+</div>
+
+        </main>
+
+    </div>
+
+    <footer id="footer">
+
+        <credit>&copy; Derechos Reservados ISW-DAW UTN I-2022</credit>
+        <div id="date">Feb 3, 2021</div>
+        <script>
+            document.getElementById("date").innerHTML = new Date().toDateString()
+        </script>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jQuery.js"></script>
+</body>
+
+</html>
