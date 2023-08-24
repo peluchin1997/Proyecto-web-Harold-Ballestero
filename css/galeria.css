@@ -1,0 +1,32 @@
+*{ /*Selector universal*/
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;/*Investigar*/
+}
+
+
+
+body{
+    background: #f9f9; /*para que la imagen se repita a lo ancho */
+    font-size: 13px; /* Tamaño de fuente */
+    font-family: "trebuchet ms", helvetica, sans-herif;
+    color: black;
+    line-height: 18px; /*Tamaño de la línea*/
+}
+
+
+#footer{
+    border-top: double; /*investigar*/
+    clear: both;
+    height: 66px;
+    text-align: center;
+    padding-top: 15px;
+    background-color: fuchsia;
+    color: white;
+}
+  
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}

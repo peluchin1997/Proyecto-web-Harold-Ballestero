@@ -1,0 +1,117 @@
+form {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  margin-bottom: 10px;
+  font-size: 15px;
+  background-color: #f9f9f9;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li+li {
+    margin-top: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #000;
+}
+
+#boton_enviar {
+    padding-right: 50px;
+}
+
+button {
+  padding: 0.5em 1em;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form ul li #date {
+    display: block;
+    width: 170px;
+    
+}
+
+form ul li #genero {
+    display: block;
+    width: 170px;
+}
+
+form ul li #rango {
+    display: block;
+    width: 170px;
+}
+
+form ul li .checkbox {
+    display: block;
+    align-items: left;
+    cursor: pointer;
+    position: relative;
+    top: 11px;
+}
+
+form ul li .grados {
+    line-height: 8px;
+    font-size: 15px;
+    
+}
+
+form ul li #enviarCorreo {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 770px) {
+    /* For mobile phones: */
+    #formulario {
+        margin-bottom: 10px;
+    }
+
+    form {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+
+    form #contenido_form{
+        padding: 20px;
+    }
+
+    form #contenido_form ul #boton_enviar{
+        text-align: center;
+    }
+
+}

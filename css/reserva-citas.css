@@ -1,0 +1,111 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d475ad;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Barra de navegación */
+#menu {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+#menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+/* Encabezado del modal */
+.modal-header {
+  background-color: #cc6161;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.rostro {
+  max-width: 100%;
+}
+
+/* Formulario de reserva */
+#citaForm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ce53d3;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#citaForm label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#citaForm input[type="text"],
+#citaForm input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#citaForm input[type="submit"] {
+  background-color: #b78484;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Tabla de citas */
+#tablaCitas {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#tablaCitas th,
+#tablaCitas td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+#tablaCitas th {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Footer */
+#footer {
+  background-color: #c75f5f;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#date {
+  font-size: 0.8em;
+}
+
+.credit {
+  font-size: 0.8em;
+}

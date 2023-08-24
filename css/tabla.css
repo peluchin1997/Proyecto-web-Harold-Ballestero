@@ -1,0 +1,95 @@
+body{
+    background: white ; /*para que la imagen se repita a lo ancho */
+    font-size: 13px; /* Tamaño de fuente */
+    font-family: "trebuchet ms", helvetica, sans-herif;
+    color: black;
+    line-height: 18px; /*Tamaño de la línea*/
+}
+
+#menu{
+    display: flex; /*cajas flexibles*/
+    height: auto;
+    margin-bottom: 10px;
+    background-color: #34375b;
+}
+
+/*----Navegador----*/
+
+
+
+#menu li{
+ display: inline-block;
+ text-align: center;
+
+}
+
+
+
+
+#container .principal{
+    float: left;
+    color: pink;
+    border: 1px solid white; /*estilo de borde*/
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 25px 10px 25px; /*izquierda, arriba, derecha, abajo*/
+}
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 20px;
+}
+
+table {
+    position: relative;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 14px;
+    width: 820px;
+    margin: 0 auto;
+    background-color: white;
+    top: 50Px;
+    
+}
+
+#tabla {
+   
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+#tabla #cabeza {
+    background-color: #34375b;
+    height: 30px;
+}
+
+#tabla #cabeza tr th{
+    color: palegreen;
+    height: 30px;
+}
+
+
+#titulo{
+    position: relative;
+    font-size: 40px;
+    color:fuchsia;
+    bottom: 40px;
+
+}
+
+#footer{
+    position: relative;
+    border-top: double; /*investigar*/
+    clear: both;
+    height: 66px;
+    text-align: center;
+    padding-top: 15px;
+    background-color: fuchsia;
+    color: white;
+    top:400px;
+}

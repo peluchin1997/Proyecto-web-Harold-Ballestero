@@ -1,0 +1,628 @@
+*{ /*Selector universal*/
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;/*Investigar*/
+}
+
+
+
+body{
+    background: rgba(153, 255, 245, 0.6); /*para que la imagen se repita a lo ancho */
+    font-size: 13px; /* Tamaño de fuente */
+    font-family: "trebuchet ms", helvetica, sans-herif;
+    color: black;
+    line-height: 18px; /*Tamaño de la línea*/
+}
+
+
+a {
+    color: crimson;
+    text-decoration: underline; /*decoracion de linea*/
+}
+
+
+a:hover{ /*pseudo selector*/
+    text-decoration: none;
+}
+
+p{
+    margin-bottom: bottom;
+    text-align: justify; 
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    
+}
+
+#outer{
+    width: 80%; /* Ancho*/
+    position: relative; /*Investigar*/
+    overflow: overlay; /*Investigar*//* para configurar lo que se sale de la caja*/
+    margin: 0 auto; /*Para centrar*/
+    background-color: #d6d89c;
+    border: initial;
+    margin-top: 10px; /*espacio hacia arriba*/
+
+}
+
+/*header*/
+#header{
+    max-width: 100%; /*max ancho*/
+    height: 170px;
+    background-color: #34375b;
+}
+
+/*selector combinado*/
+                       /*estos dos contenidos abarcan el 60% del outer*/
+
+#logo{
+    float: left;
+    width: 33%;
+    height: 170px;
+    color: #fff;
+    text-align: left;
+    padding-top: 0px; /*espacio que hay entre la caja y su contenido*/
+    background: #34375b ; /*para que la imagen se repita a lo ancho */
+}
+
+#logo .tamaño {
+    margin-top: -15  px;
+}
+
+#logo .tamaño.ultimo {
+    margin-top: -2px;
+}
+
+#header #logo span {
+    font-weight: bold;
+    font-size: 15px;
+    color: greenyellow;
+}
+
+#header #logo h1 {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color:greenyellow;
+}
+
+#header #logo sup {
+    color: #FCE2CA;
+}
+
+#menu{
+    display: flex; /*cajas flexibles*/
+    height: auto;
+    margin-bottom: 10px;
+    background-color: #34375b;
+}
+
+/*----Navegador----*/
+
+#container {
+    height: 60px;
+}
+
+#container ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#container ul li:hover{
+    background-color: pink;
+    color: #FFF;
+}
+
+#container ul li:hover a{
+    color: #FFF;
+}
+
+#container ul .principal {
+    line-height: 40px;
+    display: block;
+    color: palevioletred;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#container ul li {
+    position: relative;
+    font-weight: bold;
+    float: left;
+    margin-right: 5px;
+    padding: 10px 14px 10px 14px;
+}
+
+#container ul li #submenu li{
+    display: none;
+}
+
+#container ul li:hover #submenu li{
+    display: block;
+}
+
+#container ul li:hover #submenu li a{
+    color: #34375b;
+}
+
+
+@media screen and (max-width: 720px){ /*para una página responsiva y que agarre toda la página*/
+    #container, #container ul li{
+        width: 100%;
+        height: auto;
+        display: block;
+        background: #34375b;
+    }
+
+    #container ul li:hover #submenu li {
+        background: pink;
+    }
+
+    #container ul li:hover #submenu li a{
+        color: #34375b;
+        height: auto;
+    }
+
+    #container ul li #submenu li a{
+        width: 100%;
+        color: white;
+    }
+}
+
+/*----Contenido Principal----*/
+#pricipalcontent{
+    width: 100%;
+    background-color: white;
+}
+
+
+#secondarycontent{
+    width: 25%;
+    float: right;
+}    
+
+#primarycontent{
+    width: 74%;
+    float: left;
+    margin-right: 3px;
+}
+
+#secondarycontent h3{
+    font-size: 16px;
+    line-height: 25px;
+    color:palevioletred;
+    letter-spacing: -1px; /*Espacio de letra*/
+    background: url(../images/a22.gif) bottom repeat-x;
+    padding: 0px, 0px, 10px, 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+#secondarycontent .content{
+    padding: 0px, 10px, 0px, 10px;
+    margin-bottom: 20px;
+}
+
+#primarycontent h3{
+    font-size: 18px;
+    line-height: 25px;
+    color:palevioletred;
+    letter-spacing: -1px; /*Espacio de letra*/
+    background: url(../images/a22.gif) bottom repeat-x;
+    padding: 0px, 0px, 10px, 15px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+   
+}
+
+#primarycontent .post{
+    margin-bottom: 30px;
+}
+
+
+#primarycontent .post .content{
+    padding: 0px, 15px, 0px, 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+    margin-left: 25px;
+}
+
+#primarycontent .post .content li{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;
+  font-weight: bold;
+}
+
+#primarycontent .post .footer{
+    height: 90px;
+    text-align: right;
+}
+
+#primarycontent .post .footer img{
+    width: 100%;
+    height: 100px;
+}
+
+#primarycontent .post .footer ul{
+    list-style: none;
+}
+
+#primarycontent.post.footer ul li{
+    display: inline;
+    line-height: 14px;
+    padding-left: 17px;
+    margin-left: 25px;
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    
+    
+   
+}
+
+
+#primarycontent .post.footer ul li.readmore{
+    background-image: url(../images/icono.PNG);
+    
+}
+
+img.picA{
+    position: relative;
+    top:-2px;
+    width: 90px;
+    height: 90px;
+    padding: 4px;
+}
+
+img.floatleft{
+    float: left;
+    margin: 0px 14px 3px 0px;
+    border-radius: 40px;
+    
+    
+}
+
+img.picB{   
+    position: relative;
+    top:2px;
+    width: 260px;
+    height: 260px;
+    padding: 7px;
+    border-radius: 40px;
+}
+
+ul.linklist{
+    list-style: none;
+}
+
+ul.linklist li{
+    border-top: solid 1px #eeeeee;
+    padding-top: 5px;
+    margin: 5px 0px 0px 0px;
+}
+
+ul.linklist li.first{
+    border-top: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+/*-------Sección Maquillaje-------*/
+
+#contenido_maquillaje {
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+
+#contenido_maquillaje h1{
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: .05em;
+}
+
+#contenido_maquillaje p{
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    text-align: justify;
+    letter-spacing: .05em;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#imagen_maquillaje {
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+}
+
+#imagen_maquillaje img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+/*-------Sección Uñas-------*/
+
+#encapsulador_uñas {
+    width: 1000px;
+}
+
+#contenido_uñas h1 {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    text-rendering: optimizeLegibility;
+    text-align: left;
+    margin-left: 230px;
+    color: #2c2c2c;
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #d5d5d5, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+#contenido_uñas p {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 230px;
+}
+
+#seleccion_uñas {
+    margin-top: 20px;
+    margin-left: 230px;
+}
+
+#encapsulador_uñas #infUñas {
+    margin-left: 230px;
+    margin-top: 20px;
+}
+
+#seleccion_tipo {
+    width: 150px;
+}
+
+.caracteristicas {
+    margin-bottom: 10px;
+}
+
+/*-------------TABLA-------------*/
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+}
+
+table {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 14px;
+    width: 820px;
+    margin: 0 auto;
+}
+
+#tabla {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#tabla #cabeza {
+    background-color: #34375b;
+    height: 30px;
+}
+
+#tabla #cabeza tr th{
+    color: palegreen;
+    height: 30px;
+}
+
+#tabla #cabeza tr .secciones.nombre{
+    width: 220px;
+}
+
+#tabla #cabeza tr .secciones.foto{
+    width: 180px;
+}
+
+#tabla #cuerpo tr .secciones{
+    text-align: center;
+    height: 150px;
+}
+
+#tabla #cuerpo tr .secciones.nombre{
+    font-weight: bold;
+}
+
+#tabla #cuerpo tr .secciones.descripcion{
+    text-align: left;
+}
+
+#tabla #cuerpo tr td img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+#tabla #cuerpo .concolor{
+    background-color: lightblue;
+}
+
+#tabla #pie{
+    background-color: #34375b;
+    height: 30px;
+}
+
+#tabla #pie tr td{
+    color: #34375b;
+}
+
+/*---Footer---*/
+#footer{
+    border-top: double; /*investigar*/
+    clear: both;
+    height: 66px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/*---------Fotos Contacto---------*/
+
+.cargo {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    color: rgb(93, 58, 209);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.perfiles {
+    background-color: #7d83dc;
+    width: 100%;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 15px 15px 10px pink;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.perfiles.harold {
+    background-color: pink;
+    box-shadow: 15px 15px 10px #7d83dc;
+}
+
+
+
+.perfiles .fotos_fuera {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.perfiles #foto_dentro_yuda {
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.perfiles #foto_dentro_harold {
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+
+
+.perfiles #info_yuda {
+    color: #2c2c2c;
+    height: 375px;
+    padding: 20px;
+    text-align: center;
+}
+
+.perfiles #info_harold {
+    color: #2c2c2c;
+    height: 375px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.responsivo_info {
+    margin: 50px 0px 50px 30px;
+    display: inline-block;
+    width: 30%;
+}
+
+/*----------Responsivo acerca de-----------*/
+
+@media only screen and (max-width: 770px) {
+    /* For mobile phones: */
+    .responsivo_info {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+
+}
+
+/*-----------------------------------------*/
+
+@media only screen and (max-width: 720px) {
+    /* For mobile phones: */
+    #header #logo {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    /* For mobile phones: */
+    #header #splash {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 720px) {
+    /* For mobile phones: */
+    #secondarycontent {
+        width: 0%;
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    /* For mobile phones: */
+    #primarycontent {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    /* For mobile phones: */
+
+    #contenido_maquillaje {
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    #encapsulador_uñas {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        text-align: left;
+    }
+
+    #encapsulador_uñas #seleccion_uñas {
+        margin-left: 0;
+    }
+
+    #encapsulador_uñas #infUñas {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    #contenido_uñas h1{
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+    #contenido_uñas p{
+        text-align: center;
+        width: auto;
+        margin: 0;
+    }
+
+    table {
+        width: 100%;
+    }
+
+}
